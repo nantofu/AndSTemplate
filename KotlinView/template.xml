@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="5"
+    name="Kotlin View"
+    minApi="9"
+    minBuildApi="14"
+    description="Creates a new view in Kotlin">
+
+    <category value="Kotlin" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="viewClass"
+        name="View Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="CustomView"
+        help="The name of the view class to create" />
+
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_kotlin_view.png</thumb>
+    </thumbs>
+
+    <execute file="recipe.xml.ftl" />
+
+</template>
